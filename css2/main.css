@@ -1,0 +1,38 @@
+
+/* =============================================
+			Theme Reset Style
+============================================= */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans:300,400);
+.tg-socialicons li a i{
+	color: #fff;
+	width: 30px;
+	display:block;
+	font-size:13px;
+	line-height:30px;
+	text-align:center;
+}
+.tg-socialicons li a:hover{
+	color: #fff;
+	text-decoration:none;
+}
+
+.tg-speakers,
+.tg-speaker{
+	width:100%;
+	float:left;
+}
+.tg-speaker{padding:0 15px;}
+.tg-speakerimg{
+	width:100%;
+	float:left;
+	margin:0 0 20px;
+	overflow:hidden;
+	border-radius:4px;
+}
+.tg-speakerimg img{
+	width:100%;
+	height:auto;
+	display:block;
+}
+tg-speaker .tg-contentbox .tg-description{padding:0 0 25px;}
+.tg-speaker .tg-contentbox .tg-description p{margin:0;}

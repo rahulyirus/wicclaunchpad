@@ -1,0 +1,23 @@
+.services{
+	padding:5em 0px;
+}
+.services-left{
+	text-align:center;
+	position:relative;
+}
+.services-left span {
+  	position: absolute;
+  	background: url(../images/s-link.png) no-repeat;
+  	width: 131px;
+  	height: 5px;
+  	display: block;
+  	top: 32%;
+  	left: 77.1%;
+}
+.services-left p {
+  	color: #000000;
+  	font-size: 1.4em;
+  	font-weight: 500;
+  	margin: 20px auto 0;
+  	width: 54%;
+  	line-height: 1.3em;
