@@ -12,7 +12,7 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   color:inherit;
-  font-family:inherit;
+  font-family:"Noto Sans", sans-serif;
 }
 
 /* -------------------------------------
@@ -23,16 +23,16 @@
   margin: 50px 0 30px 120px;
   padding-left: 30px;
   border-left: 8px solid #eee9dc;
-  font-family: inherit;
+  
 }
 #timeline li {
   margin: 40px 0;
   position: relative;
-  font-family: inherit;
+  font-family:sans-serif;
 }
 #timeline p {
   margin: 0 0 15px;
-  font-family:inherit;
+  font-family: sans-serif;
 }
 
 .t_date {
