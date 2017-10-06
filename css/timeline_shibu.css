@@ -1,5 +1,5 @@
 .t_timeline{
-  padding: 0 5%;
+  padding: 3% 5%;
   font-size: 100%;
   font-family: "Noto Sans", sans-serif;
   color: #eee9dc;
@@ -99,7 +99,7 @@
 .t_label {
   font-size: 1.3em;
   position: absolute;
-  z-index: 100;
+  z-index: 1;
   cursor: pointer;
   top: 20px;
   transition: transform 0.2s linear;
