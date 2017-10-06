@@ -16,15 +16,11 @@
 	<link href="css/table.css" rel="stylesheet" type="text/css" media="all" />
 	
 	<link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
-
-
 	<link rel="stylesheet" href="css2/bootstrap.min.css">
-
 	<link rel="stylesheet" href="css2/font-awesome.min.css">
 	<link rel="stylesheet" href="css2/icomoon.css">
 	<link rel="stylesheet" href="css2/owl.carousel.min.css">
 	<link rel="stylesheet" href="css2/customScrollbar.css">
-
 	<link rel="stylesheet" href="css2/default-skin.css">
 	<link rel="stylesheet" href="css2/prettyPhoto.css">
 	<link rel="stylesheet" href="css2/animate.css">
@@ -35,7 +31,7 @@
 	<link rel="stylesheet" href="aos/dist/aos.css" />
 	<link rel="stylesheet" href="css/transforms.css" type="text/css" />
 	<link rel="stylesheet" href="css/transition_style.css" type="text/css" />
-
+	<link rel="stylesheet" href="css/timeline_shibu.css" type="text/css" />
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
 
 
@@ -44,8 +40,7 @@
 	<script src="js/allscripts.js"></script>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
-
-
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 
 	<style>
 		.inner-link {
@@ -146,9 +141,9 @@
 		#pulsor {
 			border: none;
 			box-shadow: 0 0 0px #26CCC0;
-			-webkit-animation: pusate 1s infinite alternate;
-			-moz-animation: pusate 1s infinite alternate;
-			-animation: pusate 1s infinite alternate;
+			-webkit-animation: pusate 2s infinite alternate;
+			-moz-animation: pusate 2s infinite alternate;
+			-animation: pusate 2s infinite alternate;
 		}
 
 		@-webkit-keyframes pusate {
@@ -802,51 +797,88 @@
 			
 						<a id="dates" class="in-page-link"></a>
 			
-			<section class="speakers_box2" style="background-image: url(images/bg1.jpg)" >
-				<div class="main-container">
-					<div class="row">
-						<div class="col-sm-12">
-							<div class="cubebody">
-								<div class="cube" style="width:30%">
-									<div class="flippety">
-										<h2>Important Dates</h2>
+						<div class="t_timeline">
+							<h2 class="t_h2" style="margin-top:0px">Timeline</h2>
+
+							<ul id='timeline'>
+								<li class='work'>
+									<input class='t_radio' id='work5' name='works' type='radio' checked>
+									<div class="t_relative">
+										<label class="t_label" for='work5'>Call for Articles</label>
+										<span class='t_date'>25 Sep 2017</span>
+										<span class='t_circle'></span>
 									</div>
-									<div class="flop">
-										<h2>Important Dates</h2>
+									<div class='t_content'>
+										<p>
+											Prospective authors are invited to contribute to the conference by electronically submitting full papers in English (10 �
+											20+) pages including illustrations, tables and references. Papers have to be formatted following Springer CCIS
+											style guidelines. Papers will be evaluated based on their originality, quality and significance of theoretical
+											and/or practical contribution to Innovation and Computation. At least one author of each accepted paper must register
+											at the conference. Papers will be selected for oral presentations or poster presentations. Only papers presented
+											at the conference will be included in the proceedings
+										</p>
 									</div>
-								</div>
-							</div>
+								</li>
+								<li class='work'>
+									<input class='t_radio' id='work4' name='works' type='radio'>
+									<div class="t_relative">
+										<label class="t_label" for='work4'>Deadline for Article Submission</label>
+										<span class='t_date'>25 Nov 2017</span>
+										<span class='t_circle'></span>
+									</div>
+									<div class='t_content'>
+										<p>
+											All submissions will be peer reviewed for originality, technical content and relevance to the theme of this conference by
+											at least three members of the Technical Program Committee (TPC).
+
+										</p>
+									</div>
+								</li>
+								<li class='work'>
+									<input class='radio' id='work3' name='works' type='radio'>
+									<div class="relative">
+										<label for='work3'>Notification of Acceptance</label>
+										<span class='date'>05 Jan 2018</span>
+										<span class='circle'></span>
+									</div>
+									<div class='content'>
+										<p>
+											The final acceptance will be based upon double blind peer review of the full-length paper. The conference management is done
+											through easychair.
+										</p>
+									</div>
+								</li>
+								<li class='work'>
+									<input class='radio' id='work2' name='works' type='radio'>
+									<div class="relative">
+										<label for='work2'>Camera Ready Paper Submission</label>
+										<span class='date'>15 Jan 2018</span>
+										<span class='circle'></span>
+									</div>
+									<div class='content'>
+										<p>
+
+										</p>
+									</div>
+								</li>
+								<li class='work'>
+									<input class='radio' id='work1' name='works' type='radio'>
+									<div class="relative">
+										<label for='work1'>Official start of Event</label>
+										<span class='date'>22 Mar 2018</span>
+										<span class='circle'></span>
+									</div>
+									<div class='content'>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea necessitatibus quo velit natus cupiditate qui alias possimus
+											ab praesentium nostrum quidem obcaecati nesciunt! Molestiae officiis voluptate excepturi rem veritatis eum aliquam
+											qui laborum non ipsam ullam tempore reprehenderit illum eligendi cumque mollitia temporibus! Natus dicta qui est
+											optio rerum.
+										</p>
+									</div>
+								</li>
+							</ul>
 						</div>
-					</div><!--end of row-->
-					<div class="row">
-						<div class="col-md-12">
-							<div style="padding:50px">
-							<p >
-							<center> <h1>
-							Conference Date: <b>22-24March, 2018</b><br/>
-											Call for Papers: <b>25th September, 2017</b><br/>
-											Paper Submission Deadline : <b>25thNovember, 2017</b><br/>
-											Notification of Acceptance :<b>05th January, 2018</b><br/>
-											Camera Ready Paper Submission :<b>15thJanuary, 2018</b><br/>
-
-											</h1>
-											</center>
-											</p>
-						
-					</div>
-							
-								
-							
-							</div><!--end of row-->
-						</div><!--end of col-md-12-->
-					</div><!--end of row-->
-				</div><!--End of main-container-->
-			</section>
-
-
-
-
-
 
 				<section class="pricing-options" style="background-color:linear-gradient(to right, #33cccc -7%, #6600cc 100%)">
 					<div class="container">
@@ -942,11 +974,7 @@
 
 
 				</section>
-
-				
-				
-				
-							<a id="registration" class="in-page-link"></a>
+						<a id="registration" class="in-page-link"></a>
 
 				<section class="pricing-options">
 					<div class="container">
@@ -1101,11 +1129,7 @@
 				
 				<section class="buttonsreg" style="text-align: right">
 						<button class="buttonreg drawreg" onclick="window.open('https://easychair.org/conferences/?conf=wicc2018')">
-<<<<<<< HEAD
 								Click here for Article Submission
-=======
-								Click here to register
->>>>>>> master
 						</button>
 				</section>
 				
@@ -1746,16 +1770,6 @@
 					</div>
 				</section>
 
-
-
-
-
-
-
-
-
-
-
 				<section class="strip-divider call-to-action">
 					<div class="background-image-holder parallax-background">
 						<img class="background-image" alt="BG Image" src="img/grey-bg.jpg">
@@ -1835,6 +1849,8 @@
 			<script src="js2/main.js"></script>
 			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 			<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+			
 			<script>
 							AOS.init({
 								easing: 'ease-in',

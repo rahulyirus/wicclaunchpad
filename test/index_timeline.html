@@ -16,7 +16,7 @@
  * General Style
  * ------------------------------------- */
 @import url(http://fonts.googleapis.com/css?family=Noto+Sans);
-.timeline_body {
+.t_timeline{
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 5%;
@@ -26,7 +26,7 @@
   background: #48b379;
 }
 
-.timeline_body h2 {
+.t_h2 {
   margin: 3em 0 0 0;
   font-size: 1.5em;
   letter-spacing: 2px;
@@ -50,7 +50,7 @@
   margin: 0 0 15px;
 }
 
-.timeline_body .date {
+.t_date {
   margin-top: -10px;
   top: 50%;
   left: -158px;
@@ -59,7 +59,7 @@
   position: absolute;
 }
 
-.timeline_body .circle {
+.t_circle {
   margin-top: -10px;
   top: 50%;
   left: -44px;
@@ -72,7 +72,7 @@
   position: absolute;
 }
 
-.timeline_body .content {
+.t_content {
   max-height: 20px;
   padding: 50px 20px 0;
   border-color: transparent;
@@ -81,7 +81,7 @@
   border-radius: 0.5em;
   position: relative;
 }
-.timeline_body .content:before, .content:after {
+.t_content:before, .t_content:after {
   content: "";
   width: 0;
   height: 0;
@@ -90,19 +90,19 @@
   pointer-events: none;
   right: 100%;
 }
-.timeline_body .content:before {
+.t_content:before {
   border-right-color: inherit;
   border-width: 20px;
   top: 50%;
   margin-top: -20px;
 }
-.timeline_body .content:after {
+.t_content:after {
   border-right-color: #48b379;
   border-width: 17px;
   top: 50%;
   margin-top: -17px;
 }
-.timeline_body .content p {
+.t_content p {
   max-height: 0;
   color: transparent;
   text-align: justify;
@@ -111,7 +111,7 @@
   overflow: hidden;
 }
 
-.timeline_body label {
+.t_label {
   font-size: 1.3em;
   position: absolute;
   z-index: 100;
@@ -120,25 +120,25 @@
   transition: transform 0.2s linear;
 }
 
-.timeline_body .radio {
+.t_radio {
   display: none;
 }
 
-.timeline_body .radio:checked + .relative label {
+.t_radio:checked + .t_relative label {
   cursor: auto;
   transform: translateX(42px);
 }
-.timeline_body .radio:checked + .relative .circle {
+.t_radio:checked + .t_relative .t_circle {
   background: #f98262;
 }
-.timeline_body .radio:checked ~ .content {
+.t_radio:checked ~ .t_content {
   max-height: 180px;
   border-color: #eee9dc;
   margin-right: 20px;
   transform: translateX(20px);
   transition: max-height 0.4s linear, border-color 0.5s linear, transform 0.2s linear;
 }
-.timeline_body .radio:checked ~ .content p {
+.t_radio:checked ~ .t_content p {
   max-height: 200px;
   color: #eee9dc;
   transition: color 0.3s linear 0.3s;
@@ -157,7 +157,7 @@
     margin: 50px 0;
   }
 
-  .timeline_body label {
+  t_label {
     width: 85%;
     font-size: 1.1em;
     white-space: nowrap;
@@ -167,34 +167,34 @@
     transform: translateX(18px);
   }
 
-  .timeline_body .content {
+  .t_content {
     padding-top: 45px;
     border-color: #eee9dc;
   }
-  .timeline_body .content:before, .content:after {
+  .t_content:before, .t_content:after {
     border: solid transparent;
     bottom: 100%;
   }
-  .timeline_body .content:before {
+  .t_content:before {
     border-bottom-color: inherit;
     border-width: 17px;
     top: -16px;
     left: 50px;
     margin-left: -17px;
   }
-  .timeline_body .content:after {
+  .t_content:after {
     border-bottom-color: #48b379;
     border-width: 20px;
     top: -20px;
     left: 50px;
     margin-left: -20px;
   }
-  .timeline_body .content p {
+  .t_content p {
     font-size: 0.9em;
     line-height: 1.4;
   }
 
-  .timeline_body .circle, .date {
+  .t_circle, .t_date {
     display: none;
   }
 }
@@ -206,31 +206,31 @@
 </head>
 
 <body>
-  <section class="timeline_body">
-  <h2 style="margin-top:0px">CSS3 Timeline</h2>
+  <section class="t_timeline">
+  <h2 class="t_h2">CSS3 Timeline</h2>
 <p>Please set the $vertical variable to false to see the horizontal version.</p>
 <ul id='timeline'>
   <li class='work'>
-    <input class='radio' id='work5' name='works' type='radio' checked>
-    <div class="relative">
-      <label for='work5'>Lorem ipsum dolor sit amet</label>
-      <span class='date'>12 May 2013</span>
-      <span class='circle'></span>
+    <input class='t_radio' id='work5' name='works' type='radio' checked>
+    <div class="t_relative">
+      <label class="t_label" for='work5'>Lorem ipsum dolor sit amet</label>
+      <span class='t_date'>12 May 2013</span>
+      <span class='t_circle'></span>
     </div>
-    <div class='content'>
+    <div class='t_content'>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea necessitatibus quo velit natus cupiditate qui alias possimus ab praesentium nostrum quidem obcaecati nesciunt! Molestiae officiis voluptate excepturi rem veritatis eum aliquam qui laborum non ipsam ullam tempore reprehenderit illum eligendi cumque mollitia temporibus! Natus dicta qui est optio rerum.
       </p>
     </div>
   </li>
   <li class='work'>
-    <input class='radio' id='work4' name='works' type='radio'>
-    <div class="relative">
-      <label for='work4'>Lorem ipsum dolor sit amet</label>
-      <span class='date'>11 May 2013</span>
-      <span class='circle'></span>
+    <input class='t_radio' id='work4' name='works' type='radio'>
+    <div class="t_relative">
+      <label class="t_label" for='work4'>Lorem ipsum dolor sit amet</label>
+      <span class='t_date'>11 May 2013</span>
+      <span class='t_circle'></span>
     </div>
-    <div class='content'>
+    <div class='t_content'>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea necessitatibus quo velit natus cupiditate qui alias possimus ab praesentium nostrum quidem obcaecati nesciunt! Molestiae officiis voluptate excepturi rem veritatis eum aliquam qui laborum non ipsam ullam tempore reprehenderit illum eligendi cumque mollitia temporibus! Natus dicta qui est optio rerum.
       </p>
@@ -276,7 +276,7 @@
     </div>
   </li>
 </ul>
-  </section>
+</section>
   
 </body>
 </html>

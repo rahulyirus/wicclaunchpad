@@ -1,14 +1,4 @@
-/* -------------------------------------
- * For horizontal version, set the
- * $vertical variable to false
- * ------------------------------------- */
-/* -------------------------------------
- * General Style
- * ------------------------------------- */
-@import url(http://fonts.googleapis.com/css?family=Noto+Sans);
-body {
-  max-width: 1200px;
-  margin: 0 auto;
+.t_timeline{
   padding: 0 5%;
   font-size: 100%;
   font-family: "Noto Sans", sans-serif;
@@ -16,11 +6,13 @@ body {
   background: #48b379;
 }
 
-h2 {
+.t_h2 {
   margin: 3em 0 0 0;
   font-size: 1.5em;
   letter-spacing: 2px;
   text-transform: uppercase;
+  color:inherit;
+  font-family:inherit;
 }
 
 /* -------------------------------------
@@ -31,16 +23,19 @@ h2 {
   margin: 50px 0 30px 120px;
   padding-left: 30px;
   border-left: 8px solid #eee9dc;
+  font-family: inherit;
 }
 #timeline li {
   margin: 40px 0;
   position: relative;
+  font-family: inherit;
 }
 #timeline p {
   margin: 0 0 15px;
+  font-family:inherit;
 }
 
-.date {
+.t_date {
   margin-top: -10px;
   top: 50%;
   left: -158px;
@@ -49,12 +44,12 @@ h2 {
   position: absolute;
 }
 
-.circle {
+.t_circle {
   margin-top: -10px;
   top: 50%;
   left: -44px;
-  width: 10px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
   background: #48b379;
   border: 5px solid #eee9dc;
   border-radius: 50%;
@@ -62,7 +57,7 @@ h2 {
   position: absolute;
 }
 
-.content {
+.t_content {
   max-height: 20px;
   padding: 50px 20px 0;
   border-color: transparent;
@@ -71,7 +66,7 @@ h2 {
   border-radius: 0.5em;
   position: relative;
 }
-.content:before, .content:after {
+.t_content:before, .t_content:after {
   content: "";
   width: 0;
   height: 0;
@@ -80,19 +75,19 @@ h2 {
   pointer-events: none;
   right: 100%;
 }
-.content:before {
+.t_content:before {
   border-right-color: inherit;
   border-width: 20px;
   top: 50%;
   margin-top: -20px;
 }
-.content:after {
+.t_content:after {
   border-right-color: #48b379;
   border-width: 17px;
   top: 50%;
   margin-top: -17px;
 }
-.content p {
+.t_content p {
   max-height: 0;
   color: transparent;
   text-align: justify;
@@ -101,7 +96,7 @@ h2 {
   overflow: hidden;
 }
 
-label {
+.t_label {
   font-size: 1.3em;
   position: absolute;
   z-index: 100;
@@ -110,25 +105,25 @@ label {
   transition: transform 0.2s linear;
 }
 
-.radio {
+.t_radio {
   display: none;
 }
 
-.radio:checked + .relative label {
+.t_radio:checked + .t_relative label {
   cursor: auto;
   transform: translateX(42px);
 }
-.radio:checked + .relative .circle {
+.t_radio:checked + .t_relative .t_circle {
   background: #f98262;
 }
-.radio:checked ~ .content {
+.t_radio:checked ~ .t_content {
   max-height: 180px;
   border-color: #eee9dc;
   margin-right: 20px;
   transform: translateX(20px);
   transition: max-height 0.4s linear, border-color 0.5s linear, transform 0.2s linear;
 }
-.radio:checked ~ .content p {
+.t_radio:checked ~ .t_content p {
   max-height: 200px;
   color: #eee9dc;
   transition: color 0.3s linear 0.3s;
@@ -147,7 +142,7 @@ label {
     margin: 50px 0;
   }
 
-  label {
+  t_label {
     width: 85%;
     font-size: 1.1em;
     white-space: nowrap;
@@ -157,34 +152,34 @@ label {
     transform: translateX(18px);
   }
 
-  .content {
+  .t_content {
     padding-top: 45px;
     border-color: #eee9dc;
   }
-  .content:before, .content:after {
+  .t_content:before, .t_content:after {
     border: solid transparent;
     bottom: 100%;
   }
-  .content:before {
+  .t_content:before {
     border-bottom-color: inherit;
     border-width: 17px;
     top: -16px;
     left: 50px;
     margin-left: -17px;
   }
-  .content:after {
+  .t_content:after {
     border-bottom-color: #48b379;
     border-width: 20px;
     top: -20px;
     left: 50px;
     margin-left: -20px;
   }
-  .content p {
+  .t_content p {
     font-size: 0.9em;
     line-height: 1.4;
   }
 
-  .circle, .date {
+  .t_circle, .t_date {
     display: none;
   }
 }
