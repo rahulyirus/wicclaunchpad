@@ -18,7 +18,11 @@ table tr {
 }
 table th,
 table td {
+<<<<<<< HEAD
 	font-family: 'Comfortaa', cursive;
+=======
+		font-family: 'Comfortaa', cursive;
+>>>>>>> 3609341d8da050ec0eff531768037be9e91fc30f
   padding: .625em;
   text-align: left;
 color:#fff;
