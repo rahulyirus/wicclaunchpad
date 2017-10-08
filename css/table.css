@@ -18,6 +18,7 @@ table tr {
 }
 table th,
 table td {
+		font-family: 'Comfortaa', cursive;
   padding: .625em;
   text-align: left;
 color:#fff;
