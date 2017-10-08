@@ -12,12 +12,13 @@ table caption {
   margin: .5em 0 .75em;
 }
 table tr {
-  background: #000;
+  background:#2f067c;
   border: 1px solid #ddd;
   padding: .35em;
 }
 table th,
 table td {
+	font-family: 'Comfortaa', cursive;
   padding: .625em;
   text-align: left;
 color:#fff;
